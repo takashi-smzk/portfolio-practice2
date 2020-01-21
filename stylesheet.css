@@ -1,0 +1,182 @@
+@charset "utf-8";
+
+/**
+* common
+*/
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: arial,sans-serif;
+    color: #333;
+    line-height: 1.85;
+    letter-spacing: 0.05em;
+    font-size: 1.4rem;
+    font-feature-settings: "palt";
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .2s;
+    -webkit-transition: all .2s;    
+}
+
+a:hover {
+    opacity: 0.7;
+    text-decoration: underline;
+}
+
+header .main {
+    padding: 20px 35px;
+    margin-bottom: 130px;
+    -webkit-display: flex;
+    display: flex;
+    -webkit-justfy-content: flex-end;
+    justify-content: flex-end;
+    align-items: center;
+    -webkit-align-items: center;
+}
+.main>* {
+    margin-left: 20px; 
+}
+
+.login {    
+    background-color: blueviolet;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px; 
+}
+
+
+.sprite {
+    width: 30px;
+    height: 30px;
+    background-color: #888;
+    background: url(//images/kaeru.png) no-repeat;
+    background-position: -132px -38px;
+    
+}
+
+
+
+.middle {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 500px;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+.search-text {
+    width: 584px;        
+    display: block;
+    height: 40px;
+    padding: 0 15px;
+    font-size: 2rem;
+    box-sizing: border-box;
+    border: solid 1px #ccc;
+    border-top: solid 1px #eee;
+    border-radius: 50px;
+    outline: none;
+    box-shadow: 1px 1px 4px #ccc;
+}
+
+.search-text:hover , .search-text:focus {
+    box-shadow: 2px 2px 4px #ccc;
+}
+
+.text-wrapper {
+    position: relative;
+}
+
+.text-wrapper:after {   
+    transform: translate(-50%);
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/maiku.jpg);
+    background-size: contain;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.btn {
+    padding: 8px 18px;
+    margin-right: 10px;
+    font-weight: bold;
+    color: #666;
+    border: none;
+    background-color: #f3f3f3;
+    height: 36px;
+    outline: none;
+} 
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+footer p {
+    margin-top: 0;
+}
+
+.footer-bar {
+    background-color: #f2f2f2;
+    height: 41px;
+    width: 100vw;
+    border: solid 1px #e4e4e4;
+    border-bottom: none;
+    box-sizing: border-box;
+    vertical-align: middle;
+    line-height: 41px;    
+    padding: 0 30px;
+    color: rgba(0, 0, 0, 54);
+}
+
+.footer-bar up {
+    font-size: 1.5rem;     
+
+}
+.footer-bar.down {
+    font-size: 1.3rem;
+    display: flex;
+    -webkit-display: flex; 
+    justify-content: space-between;
+    -webkit-justify-content: space-between;   
+}
+
+.footer-bar.down a {
+    color: rgba(0, 0, 0, 54);
+}
+
+.footer-left {
+
+}
+
+.footer-right {
+    
+}
+
+.footer-left>* {
+    margin-right: 23px;
+}
+.footer-right>* {
+    margin-left: 23px;
+}
